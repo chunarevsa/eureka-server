@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+
+  cloud:
+    inetutils:
+      preferred-networks: true
+
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

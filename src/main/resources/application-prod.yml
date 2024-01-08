@@ -1,0 +1,9 @@
+
+spring:
+  config:
+    import: optional:configserver:http://${LOCALHOST}:8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${LOCALHOST}:8761/eureka
