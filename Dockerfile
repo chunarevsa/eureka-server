@@ -22,4 +22,4 @@ WORKDIR /app/eureka-server
 COPY --from=builder /app/eureka-server/build/libs/eureka-server-0.0.1-SNAPSHOT.jar .
 
 # Задаем команду для запуска приложения
-CMD ["java", "-Dspring.profiles.active=prod", "-jar", "eureka-server-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "eureka-server-0.0.1-SNAPSHOT.jar"]
